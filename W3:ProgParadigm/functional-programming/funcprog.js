@@ -10,3 +10,12 @@ function convertCurrency(amount, rate) {
 }
 currency[1] = convertCurrency(currency[0], exhangeRate);
 console.log(currency);
+
+// scope
+var globalVar = 77;
+
+function scopeTest() {
+  var localVar = 88;
+}
+
+console.log(localVar);
